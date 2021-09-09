@@ -1,6 +1,12 @@
+const usuariosPaceholder = require('../data/usuariosPlaceholder.json')
+
 const controller = {
   index: function(req, res, next) {
-    res.render('index', { title: 'Express' });
+    res.render('usuarios', {
+       titulo: 'Usúarios',
+      subtitulo: 'Você está na página Usuários',
+      usuarios: usuariosPaceholder
+     });
   }
 }
 
