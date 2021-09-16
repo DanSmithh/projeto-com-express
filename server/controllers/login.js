@@ -28,7 +28,7 @@ const controller = {
       // })
     }
 
-    const usuario = JSON.parse(JSON.stringify(usuarioLogado[0], ['id', 'nome', 'email'], 4))
+    const usuario = JSON.parse(JSON.stringify(usuarioLogado[0], ['id', 'nome', 'sobrenome','email'], 4))
     console.log(usuario)
     res.send(usuario)
     // res.render('usuario', {
